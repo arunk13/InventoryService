@@ -2,7 +2,7 @@ deployment:
   dockerhub:
     branch: master
     commands:
-      - $DOCKER_HUB_TRIGGER_INVENTORY_SERVICE
+      - $DOCKER_HUB_TRIGGER
 
 
 test:
