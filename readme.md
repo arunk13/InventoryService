@@ -14,7 +14,7 @@ docker build -t aruninfy13/inventory_service .
 ### Useful docker commands 
 http://tecadmin.net/remove-docker-images-and-containers/
 
-###How add local repository to git remote
+###How add local repository to git remot
 https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
 
 
