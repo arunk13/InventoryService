@@ -3,11 +3,7 @@ node_js:
 - '5'
 
 services:
- — docker
- 
- before_script:
- — sleep 1
- 
+ — docker 
  
 env:
   global:
