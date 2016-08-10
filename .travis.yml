@@ -18,12 +18,4 @@ env:
     - secure: SI8+Pan1A864cmiU7I4xlAAuixJESQkK0LSwD0NHdb21TItyYoWsST3T0qXSD5Ca5hhDkgsO/jaG91cXdUQO328j9bL/GciSBLLF6R54ZPySeGACdgiB2WnRIvtk8SOEgn3xGiebRY8NskCi6qABB6gTItSafeNsZWyOj1pO3eaFfqzTcdtYID88Ti9o3UbIevnRIJP4lqbsYrS0qJSd3oZauiov5OksPFsQdWOZBeQojxs51lQQcqx1KuXuimYEnU0w5S1vQEtKVCoxV6BWzyPzefjCrUo8prjiCV/Bq2oSaX23JKDzW1VwzXq+U9ZZ4Q8vpYshpIf21tTWtZ7+ErjlwjgmRIqKntXFgwnMxGYfKD28/8CGIjRPtMQZyAEsI7hpa2skaTFCVHXfI2Az8NlOJYtw+yP4a1+3B8XAfIJj/3P72aHo5wpb1m5HdKEiYIJZ+V5taQ389Ztf2WtP+d3yIAeVqfn1NhytHIsT4xljlC8zNiGZQ//ZOyAYwmzpzauYiHoS6VUuA2xrgC+qIVxgPhPH+gDmXH0alesGAp04RR7+MmZDZLzXbWCyGM4vYsnfolyrFjpOrtXN8OdhWFiRlFaVjN7iiS/AXawKbgVoLCOS+MC8KcuxKcw63dHUMfie9uxO+zT8gLAWAIOVgSAtkY38TunnqpaAmmNWlAU=
     - COMMIT=${TRAVIS_COMMIT::8}
 after_success:
-  # - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-  # - export REPO=$DOCKER_USER/inventory_service
-  # - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`
-  # - echo $REPO:$TAG:$COMMIT
-  # - docker build -f Dockerfile -t $REPO:$COMMIT .
-  # - docker tag $REPO:$COMMIT $REPO:$TAG
-  # - docker tag $REPO:$COMMIT $REPO:travis-$TRAVIS_BUILD_NUMBER
-  # - docker push $REPO
-  - | curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/aruninfy13/inventoryservicetravis/trigger/1d4c5cab-efaf-4ff1-aac8-966404e38094/
+ - curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/aruninfy13/inventoryservicetravis/trigger/1d4c5cab-efaf-4ff1-aac8-966404e38094/
