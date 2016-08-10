@@ -17,5 +17,14 @@ http://tecadmin.net/remove-docker-images-and-containers/
 ###How add local repository to git remot
 https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
 
+###To create Travis configurations
+# install travis ruby command line utility
+> sudo gem install travis
+> travis --version
+# encrypt DOCKER_EMAIL, DOCKER_USER & DOCKER_PASSWORD
+> travis encrypt DOCKER_EMAIL=your-docker-hub-email@gmail.com --add env.global.DOCKER_EMAIL
+> travis encrypt DOCKER_USER=your-docker-hub-username --add env.global.DOCKER_USER
+> travis encrypt DOCKER_PASS=your-docker-hub-password --add env.global.DOCKER_PASS
+
 
 
