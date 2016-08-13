@@ -26,5 +26,5 @@ https://help.github.com/articles/adding-an-existing-project-to-github-using-the-
 > travis encrypt DOCKER_USER=your-docker-hub-username --add env.global.DOCKER_USER
 > travis encrypt DOCKER_PASS=your-docker-hub-password --add env.global.DOCKER_PASS
 
-
+[![Build Status](https://travis-ci.org/arunk13/InventoryService.svg?branch=master)](https://travis-ci.org/arunk13/InventoryService)
 
