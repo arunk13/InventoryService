@@ -12,7 +12,7 @@ router.use(requestLogger);
 
 var getAllFoodItems: express.RequestHandler = (req: express.Request, res: express.Response) => {
     console.log("getAllFoodItems");
-    res.end(JSON.stringify("Spinach Masala"));
+    res.end(JSON.stringify("Okra"));
 }
 
 var getAllFoodItemById: express.RequestHandler = (req: express.Request, res: express.Response) => {
